@@ -32,7 +32,7 @@ tags: [ai/ml, dev-perso/learning]
 
 - [x] Variables, types primitifs (`str`, `int`, `float`, `bool`, `None`)
 - [ ] Opérateurs (arithmétiques, comparaison, logiques, `in`, `is`)
-- [ ] Indentation = bloc (pas de `{}` — piège classique venant de JS)
+- [x] Indentation = bloc (pas de `{}` — piège classique venant de JS)
 - [x] `if / elif / else`
 - [ ] `for ... in` (pas de C-style `for i=0;i<n;i++`) + `while`
 - [ ] `try / except / finally`

@@ -4,7 +4,7 @@ Format : [keep-a-changelog](https://keepachangelog.com/). Entrée par semaine mi
 
 ---
 
-## [Sem 1] 2026-05-22 → 2026-05-28
+## 2026-05-25
 
 ### Added
 
@@ -37,3 +37,38 @@ Format : [keep-a-changelog](https://keepachangelog.com/). Entrée par semaine mi
 
 - Refaire exo `tier` avec `return` + `elif`
 - Recoder FizzBuzz
+
+## 2026-05-25
+
+### Done
+
+- Kaggle Learn Python — module 3 (Booleans and Conditionals) ✅
+- Exos refaits à la main dans `01-python-bootstrap.ipynb` : `tier` propre (return + elif). Reste à faire FizzBuzz, `mention(score)`, ternaire imbriqué
+
+### Learned
+
+- **Conditional expressions (ternaire)** : `valeur if condition else autre` — équivalent du `cond ? x : y` JS mais ordre inversé (valeur d'abord, pas condition)
+- **Booléens** : `bool([])` = False, `bool("")` = False, `bool(0)` = False — truthy/falsy similaire à JS mais sans surprises (pas de `[] == false` weird)
+- **`and` / `or` short-circuit** : `x or y` retourne `x` si truthy, sinon `y` (utile pour valeurs par défaut)
+
+## 2026-05-26
+
+### Done
+
+- Kaggle Learn Python — modules 3 + 4 ✅
+- Lexique `cycle-1/lexique.md` créé : 4 premiers modules définis, structure vivante
+- Exos refaits : tier+return+elif, mention(score), ternaire imbriqué, indexing/slicing, mutations, swap, combinaison
+- Guide `cycle-1/maths-progressif.md` créé : concepts math par cycle + ressources Khan Academy fr en fallback
+
+### Learned
+
+- **Ternaire Python** : `valeur if condition else autre` — ordre INVERSÉ par rapport au JS (`cond ? x : y`)
+- **`sort()` vs `sorted()`** : `.sort()` modifie en place et retourne None, `sorted()` crée une nouvelle liste
+- **`pop(i)` vs `remove(x)`** : `pop` retire par index, `remove` par valeur (1re occurrence)
+- **Tuple unpacking** : `a, b = b, a` swap en une ligne sans variable temporaire
+- **Mutabilité partagée** : `b = a` ne copie pas, les 2 pointent vers la même liste. Pour copier vraiment : `b = a.copy()` ou `b = a[:]`
+- **Slicing avancé** : `a[::-1]` inverse, `a[::2]` 1 sur 2, `a[-3:]` les 3 derniers
+
+### Blocked / à corriger
+
+- `print` vs `return` : habitude à prendre
