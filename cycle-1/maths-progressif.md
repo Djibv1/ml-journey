@@ -105,11 +105,11 @@
 
 **Trous lycée potentiels** :
 
-| Si je bloque sur...                 | Ressource                                                  | Temps  |
-| ----------------------------------- | ---------------------------------------------------------- | ------ |
-| Notation Σ (somme)                  | Tuto rapide en ligne (5 min)                               | 5 min  |
-| Softmax (intuition de la formule)   | Article "Softmax explained" ou vidéo 3B1B sur les NN ép. 4 | 30 min |
-| Lire un paper math (notation dense) | "How to read a paper" — Andrej Karpathy guide rapide       | 30 min |
+| Si je bloque sur...                 | Ressource                                                  |
+| ----------------------------------- | ---------------------------------------------------------- |
+| Notation Σ (somme)                  | Tuto rapide en ligne (5 min)                               |
+| Softmax (intuition de la formule)   | Article "Softmax explained" ou vidéo 3B1B sur les NN ép. 4 |
+| Lire un paper math (notation dense) | "How to read a paper" — Andrej Karpathy guide rapide       |
 
 **Antidote pratique** : ne pas lire le paper _seul_ la 1re fois. Lire en parallèle d'une vidéo Karpathy qui implémente le truc en PyTorch. La formule devient claire quand on voit le code.
 

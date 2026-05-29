@@ -12,7 +12,7 @@ tags: [ai/ml, dev-perso/learning]
 
 **Légende ressources** : 📄 article/doc · 🎬 vidéo · 📚 livre · 💻 repo · 🎓 cours · ⭐ indispensable · 🌐 inspiration
 
-**📘 Cours sur les outils** : à chaque fois que je rencontre un outil/concept (Python, venv, Jupyter, Colab, Kaggle, NumPy, etc.), une fiche sourcée est créée dans [cours-outils.md](cours-outils.md).
+**📘 Cours sur les outils** : à chaque fois que je rencontre un outil/concept (Python, venv, Jupyter, Colab, Kaggle, NumPy, etc.), une fiche sourcée est créée dans [cours-outils.md](cours-outils.md)
 
 ---
 
@@ -34,13 +34,13 @@ tags: [ai/ml, dev-perso/learning]
 - [ ] Opérateurs (arithmétiques, comparaison, logiques, `in`, `is`)
 - [x] Indentation = bloc (pas de `{}` — piège classique venant de JS)
 - [x] `if / elif / else`
-- [ ] `for ... in` (pas de C-style `for i=0;i<n;i++`) + `while`
+- [ ] `for ... in` + `while`
 - [ ] `try / except / finally`
 - [ ] f-strings : `f"hello {name}"`
 
 ### 1.2 Structures de données
 
-- [ ] Listes : create, append, slice (`a[1:5]`, `a[::-1]`), `len`, `sorted`
+- [x] Listes : create, append, slice (`a[1:5]`, `a[::-1]`), `len`, `sorted`
 - [ ] Tuples (immutables, unpacking : `a, b = (1, 2)`)
 - [ ] Dicts : create, update, iterate (`for k, v in d.items()`)
 - [ ] Sets (unicité, opérations ensemblistes)
@@ -69,9 +69,8 @@ tags: [ai/ml, dev-perso/learning]
 - [ ] `None` vs `null`/`undefined`
 - [ ] `pip` vs `npm` (et venv vs node_modules)
 - [ ] Pas de fonction `arrow` à la JS — `lambda` est limité
-- [ ] **Capture** : `30-Concepts/python-vs-js-key-diffs.md` (note atomique)
 
-### 🧪 Questions de vérif bloc 1 (à voix haute, sans Google)
+### 🧪 Questions de vérif bloc 1
 
 À répondre **avant** de cocher le bloc complet. Si j'hésite > 5 sec, je reviens. C'est plus rigoureux que les checkboxes.
 
@@ -234,7 +233,7 @@ Créer 5 notes courtes (~250 mots) :
 
 **Concept** : analyse exploratoire de mon vault Obsidian, en notebook + repo GitHub public.
 
-**Démarrage progressif** (anti-scope creep) — au lieu de tout sem 6-7 :
+**Démarrage progressif** :
 
 - **Sem 3** (après NumPy) : `project/00-scan-minimal.ipynb` — juste un `os.walk` qui compte les `.md` du vault. Aucune dépendance sur pandas encore. J'ai mon premier squelette.
 - **Sem 4** (pendant pandas) : `project/01-load-frontmatter.ipynb` — parser les frontmatters, construire un premier DataFrame. J'utilise pandas en pratique sur mes vraies données.
@@ -243,7 +242,7 @@ Créer 5 notes courtes (~250 mots) :
 
 ### 5.1 Pipeline
 
-- [ ] Scanner récursivement `c:\Users\djila\Desktop\SecondBrain` (exclure `50-Journal/`, `10-Moi/`, `_archive/`)
+- [ ] Scanner récursivement `Desktop\SecondBrain` (exclure `50-Journal/`, `10-Moi/`, `_archive/`)
 - [ ] Parser frontmatter YAML de chaque note Markdown
 - [ ] Construire DataFrame pandas : `path`, `theme`, `tier`, `tags`, `date_captured`, `length_words`
 - [ ] Charger en complément `00-Inbox/_telegram-queue.archive.jsonl` pour stats d'ingestion
@@ -277,7 +276,7 @@ Créer 5 notes courtes (~250 mots) :
 
 ---
 
-## 6. Challenge final — "sans Google ni LLM" (fin sem 7) ⭐
+## 6. Challenge final (fin sem 7) ⭐
 
 Validation explicite du critère de complétion #1 (les autres se valident dans le projet).
 
@@ -285,7 +284,7 @@ Validation explicite du critère de complétion #1 (les autres se valident dans 
 
 - 1 heure chronométrée, environnement isolé
 - Pas d'internet (ou seulement la doc officielle Python/numpy/pandas en local)
-- Pas d'autocomplétion IA, pas de ChatGPT/Claude, pas de Stack Overflow
+- Pas d'autocomplétion IA, pas de Claude, pas de Stack Overflow
 - Juste un éditeur + Python
 
 **Sujet** (à choisir en fin sem 6) :
@@ -318,14 +317,14 @@ Validation explicite du critère de complétion #1 (les autres se valident dans 
 ## Rituel d'exécution
 
 - **Bilan hebdo** : 10 min vendredi soir → cocher ce qui est fait, noter les blocages
-- **Capture notes** : tout concept revu 2+ fois → note atomique dans `30-Concepts/` (cf. CLAUDE.md)
+- **Capture notes** : tout concept revu 2+ fois → note atomique dans `30-Concepts/`
 - **Rétro fin de cycle** : 1h en fin de cycle → écrire `40-Projets/ml-roadmap/cycle-1/retro.md`
 
 ---
 
 ## Cycle 2 (préview) — NN from scratch
 
-Cycle 2 (après inversion F6 dans le spec parent) = **NN from scratch** avec Karpathy zero-to-hero ép. 1 (micrograd). Réinvestit immédiatement les maths du cycle 1 (chain rule, gradient).
+Cycle 2 = **NN from scratch** avec Karpathy zero-to-hero ép. 1 (micrograd). Réinvestit immédiatement les maths du cycle 1 (chain rule, gradient).
 
 Ressources déjà identifiées :
 
