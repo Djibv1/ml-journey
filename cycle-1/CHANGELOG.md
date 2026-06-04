@@ -72,3 +72,36 @@ Format : [keep-a-changelog](https://keepachangelog.com/). Entrée par semaine mi
 ### Blocked / à corriger
 
 - `print` vs `return` : habitude à prendre
+
+## 2026-06-05
+
+### Done
+
+- Kaggle Learn Python — modules 5, 6, 7 enchaînés ✅ (loops + comprehensions, strings + dicts, external libraries)
+- Bloc 1.4 OOP minimal couvert en session dédiée ✅ (`class`, `__init__`, `self`, héritage, `super()`, override de méthode)
+- **Test de sortie bloc Python validé** : `word_counter_veille` en aveugle sur `lexique.md` → top 10 mots avec stopwords, lowercase, ponctuation strippée. 1er jet bricolé (chaîne de `!=`), refacto propre derrière (`set` de stopwords, `return` au lieu de `print`).
+- **Bloc Python officiellement clos** (Kaggle 1-7 + OOP minimal + test de sortie)
+- Lexique mis à jour : sections 5/6/7 + complément lecture fichier + bloc 1.4 OOP avec teaser PyTorch (`nn.Module`)
+
+### Learned
+
+- **Set de stopwords > liste** : lookup `in` est O(1) sur set, O(n) sur liste. Réflexe à prendre dès qu'on teste l'appartenance souvent.
+- **`.strip(chars)`** retire les caractères passés en début ET fin (pas au milieu). Pratique pour virer ponctuation collée par `.split()`.
+- **Classe vs instance** : 1 classe = N instances, avec attributs propres. Comme `dict` est un type, mais on peut avoir 100 dicts distincts.
+- **`self` explicite** vs `this` implicite en JS — 1er param obligatoire de chaque méthode, mais Python le passe automatiquement à l'appel.
+- **Pas de `new`** en Python : on appelle la classe comme une fonction (`Note(...)`).
+- **`super().__init__(...)`** dans une classe enfant = construit la partie parente. Sans ça, les attributs hérités ne sont pas initialisés. **Le pattern PyTorch** : `class MyModel(nn.Module): def __init__(self): super().__init__()`.
+- **Override** = redéfinir une méthode du parent dans l'enfant. Python prend la version la plus spécifique. On n'override que ce qui change.
+- **`super().methode()`** = appeler la version du parent pour la réutiliser (DRY). Évite de tout retaper quand on enrichit juste.
+- **`n.summary` vs `n.summary()`** : sans parenthèses = référence à la méthode (`<bound method...>`), avec parenthèses = on l'APPELLE et on récupère le retour.
+- **`is not None`** plutôt que `if self.rating:` pour tester l'absence — sinon `rating = 0` (falsy) serait confondu avec "pas de rating".
+
+### Blocked / à corriger
+
+- Aucun blocage majeur côté bloc Python. Reste à pratiquer numpy/pandas pour ancrer les patterns en data.
+
+### Méta — vitesse réelle vs prévue
+
+- Prévu pour bloc Python : 2-3 semaines (sem 1-3 du cycle)
+- Réel : 2 semaines
+- Temps gagné réinjecté dans bloc 2 NumPy / maths (plus de marge pour ancrer broadcasting/axis).
